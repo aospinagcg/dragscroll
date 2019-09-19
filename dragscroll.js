@@ -21,7 +21,7 @@
         f = [],
         u = function (e, m) {
             for (e = 0; e < f.length;) m = f[e++], m = m.container || m, m[s](i, m.md, 0), o[s](r, m.mu, 0), o[s](c, m.mm, 0);
-            for (f = [].slice.call(l.querySelectorAll(".dragscroll")), e = 0; e < f.length;) ! function (e, m, s, f, u, a) {
+            for (f = [].slice.call(l.elementsByClassName("dragscroll")), e = 0; e < f.length;) ! function (e, m, s, f, u, a) {
                 (a = e.container || e)[d](i, a.md = function (n) {
                     e.hasAttribute("nochilddrag") && l.elementFromPoint(n.pageX, n.pageY) != a || (f = 1, m = n.clientX, s = n.clientY, n.preventDefault())
                 }, 0), o[d](r, a.mu = function () {
